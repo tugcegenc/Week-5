@@ -17,10 +17,10 @@ public class Main {
             }
 
         } catch (ArrayIndexOutOfBoundsException e) {
-            e.printStackTrace(System.out);
-            System.out.print("Error: Index provided is outside the bounds of the array. Array size: " + arr.length + " ");
+            e.printStackTrace(System.out); // Prints the error to the console
+            System.out.print("Error: Index provided is outside the bounds of the array. Array size: " + arr.length);
         } catch (Exception e) {
-            e.printStackTrace(System.out);
+            e.printStackTrace(System.out); // Prints any other exceptions to the console
         }
     }
 }
