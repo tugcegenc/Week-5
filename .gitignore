@@ -27,3 +27,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+Week-5.iml
+TryCatch.iml
+.gitignore
+.idea
