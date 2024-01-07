@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/KitapSiralayici/KitapSiralayici.iml" filepath="$PROJECT_DIR$/KitapSiralayici/KitapSiralayici.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookSorter/BookSorter.iml" filepath="$PROJECT_DIR$/BookSorter/BookSorter.iml" />
       <module fileurl="file://$PROJECT_DIR$/TryCatch/TryCatch.iml" filepath="$PROJECT_DIR$/TryCatch/TryCatch.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week-5.iml" filepath="$PROJECT_DIR$/Week-5.iml" />
     </modules>
