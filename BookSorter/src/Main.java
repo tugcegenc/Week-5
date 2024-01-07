@@ -10,30 +10,29 @@ public class Main {
         Book book4 = new Book("Uçurtma Avcısı", 375, "Khaled Hosseini", "2003");
         Book book5 = new Book("Bülbülü Öldürmek", 350, "Harper Lee", "1960");
 
-        // Kitapları isme göre sıralayan Set
-        Set<Book> ismeGoreSiralama = new TreeSet<>();
-        ismeGoreSiralama.add(book1);
-        ismeGoreSiralama.add(book2);
-        ismeGoreSiralama.add(book3);
-        ismeGoreSiralama.add(book4);
-        ismeGoreSiralama.add(book5);
+        // Set that sorts books by name
+        Set<Book> nameSorting = new TreeSet<>();
+        nameSorting.add(book1);
+        nameSorting.add(book2);
+        nameSorting.add(book3);
+        nameSorting.add(book4);
+        nameSorting.add(book5);
 
-        System.out.println("**KİTAP İSMİNE GÖRE SIRALAMA**");
-        for (Book book : ismeGoreSiralama) {
+        System.out.println("**SORT BY BOOK NAME**");
+        for (Book book : nameSorting) {
             System.out.println(book);
         }
 
-        // Kitapları sayfa sayısına göre sıralayan Comparator
-        Comparator<Book> sayfaSiralama = Comparator.comparingInt(Book::getPageCount);
+        // Comparator to sort books by page count
+        Comparator<Book> pageCountComparator = Comparator.comparingInt(Book::getPageCount);
 
-        // Kitapları sayfa sayısına göre sıralayan Set
-        Set<Book> sayfaSayisinaGoreSiralama = new TreeSet<>(sayfaSiralama);
-        sayfaSayisinaGoreSiralama.addAll(ismeGoreSiralama);
+        // Set that sorts books by page count
+        Set<Book> pageCountSorting = new TreeSet<>(pageCountComparator);
+        pageCountSorting.addAll(nameSorting);
 
-        System.out.println("\n**SAYFA SAYISINA GÖRE SIRALAMA**");
-        for (Book book : sayfaSayisinaGoreSiralama) {
+        System.out.println("\n**SORT BY PAGE COUNT**");
+        for (Book book : pageCountSorting) {
             System.out.println(book);
         }
     }
 }
-

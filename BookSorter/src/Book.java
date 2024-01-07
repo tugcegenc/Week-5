@@ -1,6 +1,4 @@
 import java.util.Comparator;
-import java.util.Set;
-import java.util.TreeSet;
 
 public class Book implements Comparable<Book> {
     private String bookName;
@@ -47,11 +45,13 @@ public class Book implements Comparable<Book> {
         this.publicationDate = publicationDate;
     }
 
+    // Method to compare books by their names alphabetically
     @Override
     public int compareTo(Book otherBook) {
         return this.bookName.compareTo(otherBook.bookName);
     }
 
+    // Method to represent Book object as a String
     @Override
     public String toString() {
         return "Book Name: " + this.bookName +
