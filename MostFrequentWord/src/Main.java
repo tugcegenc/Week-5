@@ -26,7 +26,7 @@ public class Main {
 
         // En sık geçen kelimeyi bulmak için HashMap içinde dolaşma
         for (Map.Entry<String, Integer> entry : wordCounts.entrySet()) {
-            if (entry.getValue() > maxCount) {
+            if (entry.getValue() >= maxCount) {
                 // Eğer bu kelimenin sayısı, şu ana kadar en yüksek sayıdan fazlaysa, bu kelimeyi en sık geçen kelime olarak belirle
                 maxCount = entry.getValue();
                 mostFrequentWord = entry.getKey();
